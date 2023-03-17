@@ -443,8 +443,11 @@ header nav{
     overflow: auto;
     max-width: 90vw;
     }
+    section.products {
+      margin: 0px;
+    }
     section.products div.container div.card{
-    min-width: 250px;
+    min-width: 70vw;
     max-height: 500px;
     }
 
