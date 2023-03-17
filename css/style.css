@@ -171,7 +171,7 @@ div.card:last-child{
   grid-column: 2 / span 3;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
 }
 div.card:nth-child(2){
   display: grid;
@@ -501,5 +501,7 @@ header nav{
     height: 60px;
     width: 60px;
   }
-  
+  div.card:first-child{
+    background-position: center;
+  }
     }
