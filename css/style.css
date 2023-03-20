@@ -29,7 +29,9 @@ width: 100%;
 Z-index: 1;
 
 }
-
+#menu{
+  display: none;
+}
 header nav span.logo{
   display: grid;
   place-content: center;
@@ -409,6 +411,30 @@ header nav{
   overflow: hidden;
   padding: 0px 10px;
 }
+#menu{
+  display: none;
+  grid-auto-flow: row;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  background-color: white ;
+  list-style: none;
+  width: 40vw;
+}
+#menu li a{
+  list-style: none;
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+}
+#menu li{
+  min-height: 70px;
+  display: grid;
+  align-content: center;
+  text-align: center;
+
+}
+
   header div.banner{
     display: grid;
     background-size: cover;
@@ -497,7 +523,7 @@ header nav{
   header nav span.menu{
     display: flex;
   }
-  header nav span.menu a svg{
+  header nav span.menu svg{
     height: 60px;
     width: 60px;
   }
