@@ -7,10 +7,10 @@ let images = ["url(../Image/model1.jpg)", "url(../Image/model2.jpg)", "url('http
 nav.addEventListener( "click", navopen)
 
 function navopen(){
-    if( menu.style.display === "none"){
-        menu.style.display = "grid"
-    } else{
+    if( menu.style.display === "grid"){
         menu.style.display = "none"
+    } else{
+        menu.style.display = "grid"
     }
 }
 let nu = 0;
