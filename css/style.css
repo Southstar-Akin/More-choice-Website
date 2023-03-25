@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+@keyframes fade{
+  0% { opacity: 1}
+  50% {opacity: 0.5}
+  100% { opacity: 0}
+}
+
 *{
   font-family: 'Nunito';
   box-sizing: border-box;
@@ -74,6 +80,7 @@ Header div#take{
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
+
 }
 div#taker{
   display: grid;
@@ -83,6 +90,8 @@ div#taker{
   background-size: 100%;
   background-position: center center;
   background-repeat: no-repeat;
+  animation: fade 2s linear 0ms;
+  animation-delay: 3s;
 
 }
 
@@ -97,7 +106,6 @@ div#taker{
   grid-area: 1/1/-1/-1;
     z-index: 2;
 }
-
 
 span.pic{
   background-color: white;
@@ -506,6 +514,9 @@ header nav{
     div.gh img{
       height:50vh;
       width: 100%;
+    }
+    span.abot{
+      font-size: 1.5rem;
     }
     section.products div.container{
     display: flex;
