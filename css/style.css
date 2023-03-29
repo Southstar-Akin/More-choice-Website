@@ -121,14 +121,14 @@ span.pic img{
 }
 Header div.banner div.text{
   display: grid;
-  color: #fff;
+  color: #d7d7d7;
   justify-content: right;
   align-content: center;
   font-size: 2rem;
   text-transform: uppercase;
 } 
 Header div.banner div.text a{
- border: 1px solid white;
+ border: 1px solid #d7d7d7;
  text-align: center;
  margin-top: 50px;
  border-radius: 40px 0px 40px 0px;
@@ -142,7 +142,7 @@ Header div.banner div.text a button{
 text-align: center;
 font-weight: 600;
 transition: all 0.3s linear;
-color: #fff;
+color: #d7d7d7;
 }
 Header div.banner div.text a:hover{
 backdrop-filter: blur(20px);
@@ -503,7 +503,14 @@ header nav{
   height: 100%;
   overflow: hidden;
   padding-left: 20px;
+  color: #ffffff;
   } 
+  Header div.banner div.text a{
+ border: 1px solid white;
+  }
+Header div.banner div.text a button{
+color: #ffffff;
+}
   div.gh{
     display: grid;
     grid-auto-flow: row;
