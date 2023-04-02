@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 @keyframes fade{
   0% { opacity: 1}
   50% {opacity: 0.5}
@@ -9,11 +10,13 @@
   font-family: 'Nunito';
   box-sizing: border-box;
   margin: 0px;
-  padding: 0px; 
+  padding: 0px;
 }
 body{
-  background-color: off-white;
+  background-color: white;
 }
+
+/* header section */
 header{
   display: Grid;
   grid-template-columns: 1fr;
@@ -30,7 +33,7 @@ grid-auto-flow: column;
 position: fixed;
 top: 0px;
 background-color: white;
-backdrop-filter: blur(10px); 
+backdrop-filter: blur(10px);
 width: 100%;
 Z-index: 3;
 
@@ -75,6 +78,9 @@ header nav ul li a:hover{
   color: white;
   text-shadow: 1px 1px 4px grey;
 }
+/* header and anv bar end */
+
+/* Banner for landing page start */
 Header div#take{
   position: relative;
   display: grid;
@@ -126,35 +132,41 @@ Header div.banner div.text{
   align-content: center;
   font-size: 2rem;
   text-transform: uppercase;
-} 
-Header div.banner div.text a{
+}
+Header div.banner div.text button{
  border: 1px solid #d7d7d7;
  text-align: center;
  margin-top: 50px;
  border-radius: 40px 0px 40px 0px;
  transition: all 0.3s linear;
 }
-Header div.banner div.text a button{
-  background-color: transparent;
- border: 0px;
+Header div.banner div.text button{
+ background-color: transparent;
+ border: 1px solid #d7d7d7;
  font-size: 1.4rem;
  text-transform: uppercase;
 text-align: center;
 font-weight: 600;
 transition: all 0.3s linear;
 color: #d7d7d7;
+text-emphasis: none;
+padding: 5px;
 }
-Header div.banner div.text a:hover{
-backdrop-filter: blur(20px);
-Text-shadow: 1px 1px 6px grey;
-background-color: #1d1d1d;
-color: white;
-border: 1px solid #1d1d1d;
-
+Header div.banner div.text button a{
+  color: #d7d7d7;
+  text-decoration: none;
 }
-/* Header div.banner div.text a button:hover{
+Header div.banner div.text button:hover{
+  backdrop-filter: blur(20px);
+  Text-shadow: 1px 1px 6px grey;
+  background-color: #1d1d1d;
   color: white;
-} */
+  border: 1px solid #1d1d1d;
+  }
+  Header div.banner div.text button:active{
+    transform: scale(0.8);
+  }
+    /* Banner section end*/
 
 section.products{
   display: flex;
@@ -217,7 +229,7 @@ div.cuut{
   transition: all 0.3s linear;
 }
 div.cuut:hover{
-  backdrop-filter: brightness(60%); 
+  backdrop-filter: brightness(60%);
   cursor: pointer;
   color: white;
 }
@@ -241,7 +253,7 @@ span.status{
   top: 10px;
   background-color: white;
   padding: 5px;
- 
+
   border-radius: 10px;
 }
 span.Name{
@@ -317,7 +329,7 @@ div.card2{
   height: 50vh;
   border-radius: 40px;
   box-shadow: 2px 2px 12px grey;
-  height:auto;  
+  height:auto;
   transition: all 0.3s linear;
 }
 span.ico{
@@ -340,7 +352,7 @@ span.content{
 span.content2{
   display: grid;
   align-self: center;
-  font-weight: Bolder; 
+  font-weight: Bolder;
   font-size: 1.2rem;
   margin: 0px 10px;
 }
@@ -352,6 +364,7 @@ div.card2:hover{
   stop-color: white;
 }
 
+/* footer starts */
 footer{
   height: auto;
   width: auto;
@@ -415,7 +428,7 @@ div.socials a:hover{
 transition: all 0.3s linear;
 }
 div.socials a:hover{
-  transform: translateY( -5px); 
+  transform: translateY( -5px);
 }
 span.copyright{
   grid-column: 1/ span 3;
@@ -426,7 +439,7 @@ span.copyright{
   font-weight: 200;
   align-self: end;
 }
-
+/* Footer ends */
 @keyframes scroll-out {
   from {
     opacity: 0;
@@ -440,7 +453,7 @@ span.copyright{
 
 
 
-
+/* Media queries for landing page */
 
 @media screen and (max-width: 760px){
   body{
@@ -499,12 +512,12 @@ header nav{
   align-content: center;
   font-size: 2rem;
   text-transform: uppercase;
-  backdrop-filter: brightness(80%); 
+  backdrop-filter: brightness(80%);
   height: 100%;
   overflow: hidden;
   padding-left: 20px;
   color: #ffffff;
-  } 
+  }
   Header div.banner div.text a{
  border: 1px solid white;
   }
@@ -540,7 +553,7 @@ color: #ffffff;
     }
 
   div.card div.cuut{
-      backdrop-filter: brightness(60%); 
+      backdrop-filter: brightness(60%);
       cursor: pointer;
       color: white;
     }
