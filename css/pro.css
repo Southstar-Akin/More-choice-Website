@@ -1,0 +1,45 @@
+section{
+    margin: 65px 0;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 20px;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.cad{
+    background-image: url('../Image/Ruth\ Sneesby.png');
+    height: 60vh;
+    background-size: cover;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.cad div{
+    position: relative;
+    height: inherit;
+    width: inherit;
+    display: grid;
+}
+
+.cad div span:nth-of-type(1){
+    position: absolute;
+    top: 51vh;
+    left: 2vw;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.cad div span:nth-of-type(2){
+    justify-self: center;
+    align-self: center;
+    color: #7d6141;
+    font-size: 3rem;
+}
+
+
+.borders{
+    border: 1px dashed black;
+}

@@ -133,37 +133,28 @@ Header div.banner div.text{
   font-size: 2rem;
   text-transform: uppercase;
 }
-Header div.banner div.text button{
+Header div.banner div.text a{
  border: 1px solid #d7d7d7;
  text-align: center;
  margin-top: 50px;
  border-radius: 40px 0px 40px 0px;
  transition: all 0.3s linear;
-}
-Header div.banner div.text button{
  background-color: transparent;
- border: 1px solid #d7d7d7;
  font-size: 1.4rem;
  text-transform: uppercase;
-text-align: center;
 font-weight: 600;
-transition: all 0.3s linear;
 color: #d7d7d7;
-text-emphasis: none;
 padding: 5px;
+text-decoration: none;
 }
-Header div.banner div.text button a{
-  color: #d7d7d7;
-  text-decoration: none;
-}
-Header div.banner div.text button:hover{
+Header div.banner div.text a:hover{
   backdrop-filter: blur(20px);
   Text-shadow: 1px 1px 6px grey;
   background-color: #1d1d1d;
   color: white;
   border: 1px solid #1d1d1d;
   }
-  Header div.banner div.text button:active{
+  Header div.banner div.text a:active{
     transform: scale(0.8);
   }
     /* Banner section end*/
@@ -467,7 +458,6 @@ header nav{
   width: 100vw;
   display: flex;
   justify-content: space-between;
-  overflow: hidden;
   padding: 0px 10px;
   z-index: 3;
 }
@@ -477,6 +467,7 @@ header nav{
   justify-content: center;
   position: fixed;
   right: 0;
+  top: 65px;
   background-color: #ffffff ;
   list-style: none;
   width: 40vw;
@@ -484,7 +475,7 @@ header nav{
   animation-duration: 0.8s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
-  z-index: 3;
+  z-index: 8;
 }
 #menu li a{
   list-style: none;
@@ -497,9 +488,10 @@ header nav{
   display: grid;
   align-content: center;
   text-align: center;
-
 }
-
+#menu li a:hover{
+  color: white;
+}
   header div.banner, div#taker{
     display: grid;
     background-size: cover;

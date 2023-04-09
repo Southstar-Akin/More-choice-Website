@@ -20,6 +20,8 @@ if (sWidth < 760){
 }
 
 let nu = 0;
+
+
 function carousel(){
     if (nu > images.length - 1){
         nu = 0
