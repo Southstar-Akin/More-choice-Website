@@ -2,15 +2,15 @@ section{
     margin: 65px 0;
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 1fr;
+    grid-template-columns:  1fr 1fr;
     padding: 0 40px;
     column-gap: 20px;
     row-gap: 20px;
 }
 
 .cad{
-    background-image: url('../Image/Ruth\ Sneesby.png');
-    height: 60vh;
+    background-image: url('../Image/Photo\ from\ Star.jpg');
+    height: 30vh;
     background-size: cover;
     border-radius: 10px;
     text-decoration: none;
@@ -44,4 +44,7 @@ section{
 
 .borders{
     border: 1px dashed black;
+}
+.none{
+    display: none;
 }
