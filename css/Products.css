@@ -1,3 +1,6 @@
+*{
+    -webkit-tap-highlight-color: transparent;
+}
 main{
     height: 100vh;
     display: grid;
