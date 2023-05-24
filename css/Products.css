@@ -4,7 +4,8 @@ main{
     grid-auto-flow: column;
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr;
-    padding: 5% 0;
+    padding: 7% 0;
+    margin-top: 2%;
 }
 
 .proImage
@@ -22,7 +23,11 @@ main{
    width: 100%;
 }
 
-
+.name{
+     font-weight: 600;
+     font-size: 1.2rem;
+     text-transform: uppercase;
+}
 .prce{
     font-weight: bolder;
     color: rgb(127, 125, 125);
@@ -35,11 +40,30 @@ div.abt{
     justify-content: center;
 }
 
+.shop{
+    border: 1px solid #1d1d1d;
+    text-align: center;
+    border-radius: 40px 0px 40px 0px;
+    transition: all 0.3s linear;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    width: 30%;
+    background-color: #1d1d1d;
+}
+
+.shop:hover{
+    transform: translateY(-3px);
+    -moz-box-shadow: -11px 11px 4px -8px rgba(0,0,0,0.75);
+    box-shadow: -11px 11px 4px -8px rgba(0,0,0,0.75);
+}
+
 #application{
-    margin-bottom: 30px;
     display: flex;
     flex-direction: column;
-    padding:0 50px;
 }
 #application span:first-child{
     font-weight: 900;
@@ -51,9 +75,15 @@ div.abt{
         flex-direction: column;
         height: auto;
         min-height: 100vh;
+        row-gap: 30px;
+        margin-top: 10%;
     }
-    div.proImage{
-        display: grid;
+    div.abt{
+        row-gap: 20px;
     }
 
+    #application span ul{
+        padding-left: 20px;
+        list-style-type: "-  ";
+    }
 }
