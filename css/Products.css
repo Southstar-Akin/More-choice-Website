@@ -69,6 +69,11 @@ div.abt{
     font-weight: 900;
 }
 
+@media screen and (max-width:960px){
+.shop{
+    width: 40%;
+}
+
 @media screen and (max-width:760px){
     main{
         display: flex;
@@ -85,5 +90,18 @@ div.abt{
     #application span ul{
         padding-left: 20px;
         list-style-type: "-  ";
+    }
+    .shop{
+        width: 40vw;
+    }
+}
+}
+
+@media screen and (max-width:370px){
+    main{
+        margin-top: 16%;
+    }
+    .shop{
+        width: 40vw;
     }
 }
