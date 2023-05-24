@@ -1,0 +1,59 @@
+main{
+    height: 100vh;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    padding: 5% 0;
+}
+
+.proImage
+{
+    width: 70%;
+    justify-self: center;
+    border-radius: 20%;
+    overflow: hidden;
+    -moz-box-shadow: -11px 11px 20px -8px rgba(0,0,0,0.75);
+    box-shadow: -11px 11px 20px -8px rgba(0,0,0,0.75);
+    align-self: center;
+    display: grid;
+}
+.proImage img{
+   width: 100%;
+}
+
+
+.prce{
+    font-weight: bolder;
+    color: rgb(127, 125, 125);
+}
+div.abt{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5%;
+    padding: 0px 5vw;
+    justify-content: center;
+}
+
+#application{
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    padding:0 50px;
+}
+#application span:first-child{
+    font-weight: 900;
+}
+
+@media screen and (max-width:760px){
+    main{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+    }
+    div.proImage{
+        display: grid;
+    }
+
+}
